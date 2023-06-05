@@ -1,7 +1,7 @@
 /*
 Theme Name: Sol's Services Theme
 Author: Tin Baltazar
-Version: 1.0.3
+Version: 1.0.4
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -194,6 +194,10 @@ footer {
     color: #fff;
 }
 
+.social-icons-div i:hover {
+    scale: 1.05;
+}
+
 .social-icons-div {
     display: flex;
     gap: 15px;
@@ -251,6 +255,29 @@ footer {
         color: #F2C48D;
     } 
 
+
+    #menu-item-21 {
+        position: static;
+        text-align: right;
+    }
+
+    .sub-menu {
+        position: static;
+        display: flex;
+        padding: 3em 0 0 30px;
+        background-color: #fff;
+        gap: 3em;
+    }
+
+    .sub-menu li {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .sub-menu li::before {
+        content: "- ";
+    }
+
     footer {
         flex-direction: column;
         gap: 10px;
@@ -276,4 +303,7 @@ footer {
     .site-title {
         font-size: 20px;
     }
+
+
+    
 }
