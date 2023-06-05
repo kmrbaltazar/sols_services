@@ -8,7 +8,7 @@ add_action('wp_enqueue_scripts', 'styleLoad');
 register_nav_menus(array(
     'primary' => __( 'Primary Menu'),
     'footer' => __( 'Footer Menu'),
-    'sidebar' => __( 'Sidebar Menu')  
+    'dropdown' => __( 'Dropdown Menu')  
 ));
 // Custom Post Type Creation
 function create_posttype() {

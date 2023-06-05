@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width">
         <title><?php bloginfo('name'); ?></title>
         <?php wp_head(); ?>
+        <script src="<?php bloginfo('template_url'); ?>/scripts.js" defer></script>
     </head>
     
 <body <?php body_class(); ?>>
