@@ -15,13 +15,13 @@
                         <p class="paragraph2">arrowfieldsol@gmail.com</p>
                     </div>
                     <div class="social-icons-div">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-instagram"></i>
+                        <a href="https://www.facebook.com/SolsServices" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sols_services/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="copyright-div">
                     <p class="dev-details">Web design and development by <a href="#" class="tin-logo-container"><img src="<?php bloginfo('template_url'); ?>/Assets/tin-logo-white.png" alt="Tin Baltazar logo" class="tin-logo"></a></p>
-                    <p>Copyright © 2023 All Rights Reserved </p>
+                    <p>Copyright © <?php echo date("Y") ?> All Rights Reserved </p>
                 </div>
             </div>
         </footer>
