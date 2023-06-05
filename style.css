@@ -1,7 +1,7 @@
 /*
 Theme Name: Sol's Services Theme
 Author: Tin Baltazar
-Version: 1.0.2
+Version: 1.0.3
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -168,6 +168,112 @@ header a {
     display: flex;
 }
 
-.hidden {
+.hidden, .toggle-nav {
     display: none;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #522f1c;
+    color: #fff;
+    align-items: start;
+}
+
+.footer-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 283px;
+    gap: 30px;
+}
+
+.social-icons-div i {
+    font-size: 44px;
+    color: #fff;
+}
+
+.social-icons-div {
+    display: flex;
+    gap: 15px;
+}
+
+.copyright-div p {
+    font-size: 12px;
+}
+
+.copyright-div {
+    border-top: 1px solid #fff;
+}
+
+.dev-details {
+    display: flex;
+    gap: 5px;
+}
+
+.tin-logo-container img {
+    height: 11px;
+}
+
+
+
+/* TABLET */
+@media (max-width: 62em){
+
+    header nav .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+        align-items: end;
+        background-color: #fff;
+        padding: 20px 20px 60px 20px;
+        margin: 0;
+    }
+
+    header nav .menu a {
+        color: #522f1c;
+    }
+
+    .toggle-nav {
+        display: inline-block !important;
+        color: #fff;
+        transition: color linear 0.15s;
+        font-size: 44px;
+    }
+
+    .toggle-nav:hover, .toggle-nav.active {
+        text-decoration: none;
+        color: #F2C48D;
+    } 
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-text-container {
+        width: auto;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 32em){
+    header {
+        padding: 0 10px;
+    }
+
+    .logo-container {
+        width: 50px;
+        height: 50px;
+    }
+
+    .site-title {
+        font-size: 20px;
+    }
 }
