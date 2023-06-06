@@ -2,29 +2,21 @@
     get_header();
 ?>
 <!-- above this comment it will be header.php -->
-    <hr>
     
-    <h1>This is my landing index page</h1>
-    <p>welcome to my index page Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam consequatur atque quia placeat non dolorem laudantium voluptatem esse? Recusandae, illo!</p>
-    <!-- GETTING POSTS FROM WP DASHBOARD -->
-    <section class='post-container'>
-        <?php 
-            if(have_posts()) : while(have_posts()) : the_post(); ?>
     
-            <article class="post">
-                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                <?php the_content(); ?>
-            </article>
-            
-            <?php endwhile;
-            
-            else :
-                echo '<p>No content found</p>';
-            
-            endif;
-        ?>
+    <section class="home-landing">
+        <div class="home-landing-content">
+            <div>
+                <h4 class="h4 home-landing-text">Hi, my name is Sol, my team and I offer</h4>
+                <h1 class="headline home-landing-text">High Quality Gardening and Landscaping Services</h1>
+            </div>
+            <div class="button-style support-btn">
+                <span><a href="<?php echo home_url(); ?>/contact/" class="button">Call now 02041494452</a></span>
+            </div>  
+
+        </div>
     </section>
-    <!-- GETTING POSTS FROM WP DASHBOARD -->
+    
     <hr>
 <!-- below this comment it will be footer.php -->
 <?php

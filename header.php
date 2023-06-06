@@ -14,7 +14,7 @@
         <header>
             <a href="<?php echo home_url(); ?>" class="logo"> 
                 <div class="logo-container">
-                    <img src="<?php bloginfo('template_url'); ?>/Assets/sols-services-logo-v2.png" alt="Sol's Services Logo">
+                    <img src="<?php bloginfo('template_url'); ?>/Assets/original-logo.png" alt="Sol's Services Logo">
                 </div>
                 <h2 class="site-title"><?php bloginfo('name'); ?></h2>
             </a>

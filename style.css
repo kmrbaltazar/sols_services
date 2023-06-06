@@ -84,17 +84,18 @@ img {
 
 /* Header */
 header {
-    background-color: #522f1c;
+    background-color: #f2f2f2;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
     position: relative;
+    z-index: 1000;
 }
 
 header a {
-    color: #fff;
+    color: #522f1c;
     text-decoration: none;
 }
 
@@ -144,7 +145,7 @@ header a {
 /* Header menu */
 .header-menu li:hover {
     text-decoration: underline;
-    color: #fff;
+    color: #522f1c;
 }
 
 #menu-item-21 {
@@ -153,7 +154,7 @@ header a {
 
 .sub-menu {
     position: absolute;
-    background-color: #522f1cd7;
+    background-color: #f2f2f2d9;
     top: 20px;
     list-style: none;
     padding: 50px 30px 20px 30px;
@@ -177,7 +178,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
-    background-color: #522f1c;
+    background-color: #0F2D75;
     color: #fff;
     align-items: start;
 }
@@ -220,6 +221,51 @@ footer {
     height: 11px;
 }
 
+/* INDEX - HOME LANDING */
+.home-landing {
+    height: 85vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./Assets/landing-main.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+    filter: rgba(0, 0, 0, 0.32);
+  }
+
+  .home-landing-content {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.47);
+    padding: 4em 20px 5em 20px;
+    margin: 5% 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.home-landing-content * {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* BUTTON STYLE */
+.button-style a {
+    color: #0d0d0d;
+    background-color: #FFB129;
+    padding: 11px 23px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.button-style a:hover {
+    background-color: #F2C48D;
+}
+
 
 
 
@@ -247,7 +293,7 @@ footer {
 
     .toggle-nav {
         display: inline-block !important;
-        color: #fff;
+        color: #522f1c;
         transition: color linear 0.15s;
         font-size: 44px;
     }
@@ -283,11 +329,29 @@ footer {
     footer {
         flex-direction: column;
         gap: 10px;
+        padding-left: 40px;
     }
 
     .footer-text-container {
         width: auto;
     }
+
+    .home-landing-text h1 {
+        font-size: 50px;
+    }
+
+    .home-landing {
+        filter: rgba(0, 0, 0, 0.982);
+    }
+
+    .home-landing-content {
+        background: none;
+    }
+
+    .home-landing-content * {
+        width: auto;
+    }
+    
 }
 
 
@@ -304,6 +368,10 @@ footer {
 
     .site-title {
         font-size: 20px;
+    }
+
+    footer {
+        padding-left: 10px;
     }
 
 
