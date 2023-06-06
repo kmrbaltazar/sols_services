@@ -24,7 +24,11 @@
                     wp_nav_menu( $argument );
                 ?>
             </nav>
-            <a class="toggle-nav" href="#" id="burger-icon">&#9776;</a>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         </header>
         
         <div class="page-content">
