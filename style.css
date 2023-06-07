@@ -198,7 +198,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
-    background-color: #0F2D75;
+    background-color: #081c4b;
     color: #fff;
     align-items: start;
     margin-top: 60px;
@@ -296,7 +296,7 @@ footer {
 }
 
 .landing-services .h2, .landing-reviews .h2 {
-    color: #0F2D75;
+    color: #081C4B;
 }
 
 .featured-services-cards {
@@ -341,7 +341,7 @@ footer {
 
 .landing-reviews {
     padding: 40px;
-    background-color: #f2f2f2;
+    background-color: #ddd;
     display: flex;
     flex-direction: column;
     gap: 30px;
