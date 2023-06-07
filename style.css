@@ -1,7 +1,7 @@
 /*
 Theme Name: Sol's Services Theme
 Author: Tin Baltazar
-Version: 1.0.6
+Version: 1.0.7
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -299,6 +299,12 @@ footer {
     color: #081C4B;
 }
 
+.page-title {
+    color: #522f1c;
+    padding: 0 40px;
+    margin: 40px 0 50px 0;
+}
+
 .featured-services-cards {
     display: flex;
     gap: 40px;
@@ -359,6 +365,75 @@ footer {
     flex-direction: column;
     margin-right: 40px;
 }
+
+.about-page-info {
+    padding: 0 10% 50px 10%;
+    display: flex;
+    gap: 40px;
+    border-bottom: 1px solid #9B9B9B;
+    align-items: center;
+}
+
+.about-page-info img, .person-img-wrapper img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.wp-block-image {
+    flex: 1;
+    /* height: 70%; */
+}
+
+.wp-block-group {
+    flex: 2;
+    text-align: justify;
+    font-size: 18px;
+    /* padding: 50px 0 0 0; */
+}
+
+.people-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.our-team-div {
+    display: flex;
+    gap: 50px;
+    padding: 40px 10%;
+    align-items: center;
+}
+
+.our-team-div:nth-child(even) {
+    background-color: #ddd;
+    flex-direction: row-reverse;
+}
+
+.team-child:first-child {
+    flex: 1.5;
+}
+
+.team-child:last-child {
+    flex: 1;
+}
+
+.our-team-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+}
+
+.person-img-wrapper {
+    height: 300px;
+}
+
+.person-info {
+    color: #081C4B;
+}
+
+
+
 
 
 
@@ -458,6 +533,15 @@ footer {
 
     .home-landing-content * {
         width: auto;
+    }
+
+    .about-page-info {
+        flex-direction: column;
+    }
+
+    .wp-block-image {
+        height: 300px;
+
     }
     
 }
