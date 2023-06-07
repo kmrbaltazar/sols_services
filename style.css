@@ -1,7 +1,7 @@
 /*
 Theme Name: Sol's Services Theme
 Author: Tin Baltazar
-Version: 1.0.5
+Version: 1.0.6
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -244,7 +244,7 @@ footer {
 
 /* INDEX - HOME LANDING */
 .home-landing {
-    height: 85vh;
+    height: 90vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./Assets/landing-main.jpg");
     background-size: cover;
     background-position: center;
@@ -295,7 +295,7 @@ footer {
     margin: 30px 0;
 }
 
-.landing-services .h2 {
+.landing-services .h2, .landing-reviews .h2 {
     color: #0F2D75;
 }
 
@@ -307,6 +307,10 @@ footer {
 .featured-card {
     flex: 1;
     position: relative;
+}
+
+.featured-card:hover {
+    filter: saturate(1.8) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .featured-card img {
@@ -326,13 +330,34 @@ footer {
     padding: 20px;
 }
 
-.featured-btn {
+.btn-left {
     align-self: end;
     color: #0d0d0d;
     background-color: #FFB129;
     padding: 11px 0;
     border-radius: 10px;
     text-decoration: none;
+}
+
+.landing-reviews {
+    padding: 40px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.cta-btn {
+    display: flex;
+    justify-content: end;
+    width: auto;
+}
+
+.landing-get-quote {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
 }
 
 
@@ -482,6 +507,50 @@ footer {
         transform: translateY(-10px) rotate(-45deg);
     }
 
+    .home-landing-text .h4 {
+        font-size: 18px;
+    }
+
+    .home-landing-content h1 {
+        font-size: 38px;
+    }
+    .landing-services .h2, .landing-reviews .h2 {
+        font-size: 32px;
+    }
+
+    .landing-services {
+        padding: 0;
+    }
+
+    .landing-services h2 {
+        padding: 0 10px;
+    }
+
+    .featured-services-cards {
+        flex-direction: column;
+    }
+
+    .featured-card img {
+        border-radius: 0;
+    }
+
+    .featured-title {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    .wp-gr .grw-slider .grw-row {
+        /* flex-wrap: wrap !important; */
+        flex-direction: column !important;
+    }
+
+    .btn-left {
+        margin-right: 10px;
+    }
+
+    .landing-get-quote {
+        margin: 0;
+    }
 
     
 }

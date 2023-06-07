@@ -38,8 +38,21 @@
                 </a>
             </div>
         </div>
-        <div class="button-style featured-btn">
+        <div class="button-style btn-left">
             <span><a href="<?php echo home_url(); ?>/services/" class="button">View Services</a></span>
+        </div>
+    </section>
+
+    <section class="landing-reviews">
+        <h2 class="h2">WHAT OUR CUSTOMERS ARE SAYING</h2>
+        <div class="google-reviews">
+            <?php echo do_shortcode( '[trustindex no-registration=google]' ); ?>
+        </div>
+    </section>
+
+    <section class="landing-get-quote">
+        <div class="button-style btn-left cta-btn">
+                <span><a href="<?php echo home_url(); ?>/services/" class="button">Get a free quote</a></span>
         </div>
     </section>
     
