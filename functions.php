@@ -10,3 +10,7 @@ register_nav_menus(array(
     'footer' => __( 'Footer Menu'),
     'dropdown' => __( 'Dropdown Menu')  
 ));
+
+
+
+

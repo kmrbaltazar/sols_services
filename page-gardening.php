@@ -77,7 +77,7 @@
         ?>
    </section>
 
-   <section class="landing-get-quote">
+   <section class="landing-get-quote service-btn">
         <div class="button-style btn-left cta-btn">
                 <span><a href="<?php echo home_url(); ?>/services/" class="button">Get a free quote</a></span>
         </div>

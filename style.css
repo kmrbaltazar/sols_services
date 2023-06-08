@@ -10,6 +10,12 @@ body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+
+.page-content {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .body-container{
     min-height: 100vh;
     display: grid;
@@ -495,12 +501,13 @@ footer {
     border-bottom: 1px solid #9B9B9B;
 }
 
-.gardening-image-div  {
+.gardening-image-div {
     position: relative;
 }
 
 .gardening-image-wrapper {
     height: 480px;
+    width: 100%;
 }
 
 .gardening-price-div {
@@ -521,6 +528,7 @@ footer {
     font-size: 18px;
     line-height: 1.5;
     margin: 40px 0 60px 0;
+    text-align: justify;
 }
 
 .gardening-service i {
@@ -564,6 +572,7 @@ hr {
     flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 .name-before, .name-after {
@@ -581,6 +590,7 @@ hr {
 .service-image-wrapper {
     height: 432px;
 }
+
 
 
 
@@ -715,6 +725,24 @@ hr {
     .service-card h2 {
         font-size: 32px;
     }
+
+    .gardening-price-div h3 {
+        font-size: 24px;
+    }
+
+    .gardening-blurb {
+        font-size: 16px;
+    }
+
+    .offerings-section {
+        grid-template-columns: repeat(auto-fill, minmax(130px,1fr));
+        grid-auto-rows: minmax(150px,auto);
+    }
+
+    .service-image-wrapper {
+        height: 254px;
+    }
+
 
    
     
@@ -887,6 +915,32 @@ hr {
    
     .service-card p {
         height: auto;
+    }
+
+    .gardening-intro, .landscaping-intro {
+        padding: 0 20px;
+    }
+
+    .gardening-price-div {
+        flex-direction: column;
+    }
+
+    .gardening-blurb p {
+        font-size: 16px !important;
+    }
+
+    .offerings-section {
+        grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+        grid-auto-rows: minmax(150px,auto);
+    }
+
+    .service-before-after-gallery {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .service-btn {
+        padding-right: 9px;
     }
 
     
