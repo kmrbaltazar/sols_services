@@ -17,7 +17,7 @@
     
     
     <!-- DISPLAYING DASHBOARD CONTENT/TITLE OF A PAGE -->
-    <h2 class="h2 page-title">Our Team</h2>
+    <h2 class="h2 sub-title">OUR TEAM</h2>
     <section class="people-container">
     
         <!-- custom posts for our people will loop here -->
