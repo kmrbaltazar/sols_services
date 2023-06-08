@@ -61,6 +61,7 @@ img {
 
 .paragraph1 {
     font-size: 18px;
+    line-height: 1.5;
 }
 
 .paragraph2 {
@@ -367,37 +368,28 @@ footer {
 }
 
 .about-page-info {
-    padding: 0 10% 50px 10%;
+    padding: 0 40px 50px 40px;
     display: flex;
     gap: 40px;
     border-bottom: 1px solid #9B9B9B;
-    align-items: center;
+    align-items: start;
 }
 
-.about-page-info img, .person-img-wrapper img {
+.about-page-info img, .person-img-wrapper img, .gardening-image-wrapper img {
     object-fit: cover;
     border-radius: 10px;
 }
 
-/* .wp-block-image {
-    flex: 1;
-
-}
-
-.wp-block-group {
-    flex: 2;
-    text-align: justify;
-    font-size: 18px;
-  
-} */
-
 .about-img-wrapper {
     flex: 1;
+    height: 400px;
 }
 
 .about-txt {
-    flex: 1.5;
+    flex: 1;
     text-align: justify;
+    line-height: 1.5;
+    font-size: 18px;
 }
 
 .people-container {
@@ -441,6 +433,88 @@ footer {
     color: #081C4B;
 }
 
+.services-info {
+    padding: 0 40px 30px 40px;
+    text-align: justify;
+    border-bottom: 1px solid #9B9B9B;
+}
+
+.services-txt {
+    padding: 0 0 20px 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.nivoSlider img, .service-img-container img {
+    border-radius: 10px;
+}
+
+.carousel-mobile {
+    display: none;
+}
+
+.main-services {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 40px;
+    padding: 60px 40px 0 40px;
+}
+
+.service-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.service-img-container {
+    height: 395px;
+}
+
+.service-btn {
+    align-self: start;
+}
+
+.service-card p {
+    height: 81px;
+}
+
+.service-card h2 {
+    color: #081c4b;
+}
+
+.gardening-intro {
+    padding: 0 40px;
+    border-bottom: 1px solid #9B9B9B;
+}
+
+.gardening-image-div  {
+    position: relative;
+}
+
+.gardening-image-wrapper {
+    height: 480px;
+}
+
+.gardening-price-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #FFB129;
+    width: inherit;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.gardening-blurb {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 40px 0 60px 0;
+}
 
 
 
@@ -562,7 +636,17 @@ footer {
         width: 100%;
     }
 
+    .service-img-container {
+        height: 205px;
+    }
+
+    .service-card p {
+        height: 170px;
+    }
     
+    .service-card h2 {
+        font-size: 32px;
+    }
 
    
     
@@ -662,6 +746,10 @@ footer {
         padding: 0 5% 50px 5%;
     }
 
+    .about-txt {
+        font-size: 16px;
+    }
+
     .our-team-div {
         flex-direction: column-reverse;
         padding: 0 5% 20px 5%;
@@ -675,6 +763,10 @@ footer {
 
     .team-child:last-child {
         flex: none;
+    }
+
+    .person-description {
+        font-size: 16px;
     }
 
     .person-img-wrapper {
@@ -697,6 +789,32 @@ footer {
 
     .person-info h4 {
         font-size: 18px;
+    }
+
+    .services-info {
+        padding: 0 20px;
+    }
+
+    .carousel-mobile {
+        display: block;
+    }
+
+    .carousel-desktop {
+        display: none;
+    }
+    
+    .main-services {
+        flex-direction: column;
+        padding: 60px 20px 0 20px;
+        gap: 80px;
+    }
+
+    .service-img-container {
+        height: 277px;
+    }
+   
+    .service-card p {
+        height: auto;
     }
 
     
