@@ -7,9 +7,13 @@
     <h1 class="h1 page-title"><?php the_title(); ?></h1>
 
     <section class="about-page-info">
-        <?php the_content(); ?>
+        <div class="about-img-wrapper">
+            <img src="<?php bloginfo('template_url'); ?>/Assets/team1.jpg" alt="Sol's Services Team Photo">
+        </div>
+        <div class="about-txt">
+            <?php the_content(); ?>
+        </div>
     </section>
-
     
     
     <!-- DISPLAYING DASHBOARD CONTENT/TITLE OF A PAGE -->

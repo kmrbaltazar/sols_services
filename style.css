@@ -379,16 +379,25 @@ footer {
     border-radius: 10px;
 }
 
-.wp-block-image {
+/* .wp-block-image {
     flex: 1;
-    /* height: 70%; */
+
 }
 
 .wp-block-group {
     flex: 2;
     text-align: justify;
     font-size: 18px;
-    /* padding: 50px 0 0 0; */
+  
+} */
+
+.about-img-wrapper {
+    flex: 1;
+}
+
+.about-txt {
+    flex: 1.5;
+    text-align: justify;
 }
 
 .people-container {
@@ -538,11 +547,24 @@ footer {
     .about-page-info {
         flex-direction: column;
     }
-
-    .wp-block-image {
-        height: 300px;
-
+    
+    .page-title {
+        font-size: 32px !important;
     }
+
+    .our-team-div {
+        gap: 30px;
+    }
+
+    .about-img-wrapper {
+        height: 260px;
+        flex: none;
+        width: 100%;
+    }
+
+    
+
+   
     
 }
 
@@ -634,6 +656,47 @@ footer {
 
     .landing-get-quote {
         margin: 0;
+    }
+
+    .about-page-info {
+        padding: 0 5% 50px 5%;
+    }
+
+    .our-team-div {
+        flex-direction: column-reverse;
+        padding: 0 5% 20px 5%;
+    }
+
+    .our-team-div:nth-child(even) {
+        flex-direction: column-reverse;
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .team-child:last-child {
+        flex: none;
+    }
+
+    .person-img-wrapper {
+        height: 275px !important;
+        width: 100%;
+    }
+
+    .page-title {
+        margin: 30px 0;
+        padding: 0 5%;
+    }
+
+    .people-container {
+        gap: 30px;
+    }
+
+    .person-info h3 {
+        font-size: 24px;
+    }
+
+    .person-info h4 {
+        font-size: 18px;
     }
 
     
