@@ -3,6 +3,7 @@
 ?>
 <!-- above this comment it will be header.php -->
  
+<section class="big-screens">
     <!-- DISPLAYING DASHBOARD CONTENT/TITLE OF A PAGE -->
     <h1 class="h1 page-title"><?php the_title(); ?></h1>
 
@@ -50,6 +51,7 @@
         ?>
         <!-- display our people loop ends -->
     </section>
+</section>
 <!-- below this comment it will be footer.php -->
 <?php
     get_footer();

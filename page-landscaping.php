@@ -2,7 +2,7 @@
     get_header();
 ?>
 <!-- above this comment it will be header.php -->
- 
+<section class="big-screens">
     <!-- DISPLAYING DASHBOARD CONTENT/TITLE OF A PAGE -->
     <h1 class="h1 page-title"><?php the_title(); ?></h1>
 
@@ -78,10 +78,10 @@
 
    <section class="landing-get-quote service-btn">
         <div class="button-style btn-left cta-btn">
-                <span><a href="<?php echo home_url(); ?>/services/" class="button">Get a free quote</a></span>
+                <span><a href="<?php echo home_url(); ?>/contact/" class="button">Get a free quote</a></span>
         </div>
     </section>
-
+</section>
     
 <!-- below this comment it will be footer.php -->
 <?php

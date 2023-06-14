@@ -1,7 +1,7 @@
 /*
 Theme Name: Sol's Services Theme
 Author: Tin Baltazar
-Version: 1.0.7
+Version: 1.0.9
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -10,11 +10,6 @@ body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-
-/* .page-content {
-    max-width: 1440px;
-    margin: 0 auto;
-} */
 
 .body-container{
     min-height: 100vh;
@@ -252,7 +247,7 @@ footer {
 /* INDEX - HOME LANDING */
 .home-landing {
     height: 90vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./Assets/landing-main.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./Assets/services-carousel7.png");
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -388,7 +383,7 @@ footer {
     align-items: start;
 }
 
-.about-page-info img, .person-img-wrapper img, .main-service-image-wrapper img {
+.about-page-info img, .person-img-wrapper img, .main-service-image-wrapper img, .contact-child img, .service-image-wrapper img {
     object-fit: cover;
     border-radius: 10px;
 }
@@ -458,8 +453,9 @@ footer {
     line-height: 1.5;
 }
 
-.nivoSlider img, .service-img-container img, .service-image-wrapper img, .portfolio-item img {
+.nivoSlider img, .service-img-container img, .portfolio-item img {
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .carousel-mobile {
@@ -602,11 +598,99 @@ hr {
     padding: 40px 0;
 }
 
+.contact-page-section {
+    padding: 0 40px;
+    display: flex;
+    gap: 80px;
+}
+
+.contact-child:first-child {
+    flex: 1;
+}
+
+.contact-child:last-child {
+    flex: 1;
+    filter: saturate(1.5);
+}
+
+div.wpforms-container-full textarea {
+    width: 100% !important;
+}
+
+/* This styles the form elements only */
+.wpforms-container.wpf-contact {
+    margin: 0 auto !important;
+    width: 100% !important;
+}
+
+.wpforms-container input.wpforms-field-medium, .wpforms-container select.wpforms-field-medium, .wpforms-container .wpforms-field-row.wpforms-field-medium {
+    max-width: 100% !important;
+    width: 100% !important;
+    /* margin: 0 auto !important; */
+}
+
+/* This styles the submit button */
+.wpf-contact .wpforms-submit-container  {
+    display: flex;
+    width: 100% !important;
+    justify-content: end;
+}
+
+.wpf-contact .wpforms-submit-container * {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+}
+
+.wpf-contact .wpforms-submit-container *:hover {
+    background-color: #F2C48D !important;
+}
+ 
+/* This styles all pagebreak elements */
+.wpf-contact .wpforms-field-pagebreak  {
+    display: inline-block;
+    text-align: center;
+    width: 100% !important;
+}
+ 
+.wpf-contact .wpforms-pagebreak-left .wpforms-page-button:before,.wpf-contact .wpforms-pagebreak-left .wpforms-page-button:after {
+    content: none;
+} 
+ 
+/* This styles all labels, field descriptions, form titles, and form descriptions */
+.wpf-contact .wpforms-title, 
+.wpf-contact .wpforms-description,
+.wpf-contact .wpforms-field-label,
+.wpf-contact .wpforms-field-sublabel, 
+.wpf-contact .wpforms-field-description {
+    text-align: left;
+}
+
+.wpf-contact .wpforms-description {
+    width: 100% !important;
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+    text-align: justify !important;
+}
+
+.wpforms-confirmation-container-full {
+    color: #0d0d0d !important;
+    margin: 0 0 24px 0 !important;
+    background: #F2C48D !important;
+    border: 1px solid #522f1c !important;
+    padding: 15px 15px !important;
+    border-radius: 10px !important;
+    font-size: 18px !important;
+}
 
 
+/* BIG SCREENS */
+@media (min-width: 120em) {
+    .big-screens {
+        width: 80%;
+        margin: 0 auto;
+    }
 
-
-
+}
 
 /* TABLET */
 @media (max-width: 62em){
@@ -739,7 +823,7 @@ hr {
     }
 
     .main-service-price-div h3 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .main-service-blurb {
@@ -758,6 +842,14 @@ hr {
     .project-portfolio-section {
         grid-template-columns: repeat(auto-fill, minmax(209px,1fr));
         grid-auto-rows: minmax(284px,auto);
+    }
+
+    .contact-child:last-child {
+        display: none;
+    }
+
+    .name-before, .name-after {
+        font-size: 18px !important;
     }
 
 
@@ -810,12 +902,12 @@ hr {
         transform: translateY(-10px) rotate(-45deg);
     }
 
-    .home-landing-text .h4 {
-        font-size: 18px;
+    .home-landing-content h4 {
+        font-size: 18px !important;
     }
 
     .home-landing-content h1 {
-        font-size: 38px;
+        font-size: 44px;
     }
     .landing-services .h2, .landing-reviews .h2 {
         font-size: 32px;
@@ -894,6 +986,7 @@ hr {
 
     .sub-title {
         font-size: 20px;
+        padding: 0 20px;
     }
 
     .people-container {
@@ -940,6 +1033,7 @@ hr {
 
     .main-service-price-div {
         flex-direction: column;
+        gap: 20px;
     }
 
     .main-service-blurb p {
@@ -972,6 +1066,11 @@ hr {
     .project-portfolio-section img {
         border-radius: 0;
     }
+
+    .contact-page-section {
+        padding: 0 20px;
+    }
+
 
     
 }
