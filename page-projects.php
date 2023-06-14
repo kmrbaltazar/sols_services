@@ -1,15 +1,15 @@
 <?php
     get_header();
 ?>
-<!-- above this comment it will be header.php -->
+<!-- header.php above -->
+
 <section class="big-screens">
-    <!-- DISPLAYING DASHBOARD CONTENT/TITLE OF A PAGE -->
+    
     <h1 class="h1 page-title"><?php the_title(); ?></h1>
 
     <section class="project-portfolio-section">
         <?php 
-        // you can change variable name to anything you want, just make sure to change it for all of them
-        $project_portfolio = pods( 'project_portfolio' );  // change 'pod-name' to the Pods custom post name
+        $project_portfolio = pods( 'project_portfolio' );  
 
         $params = array(
             'orderby' => 'date',    // Sort by date
@@ -29,7 +29,7 @@
 </section>
    
     
-<!-- below this comment it will be footer.php -->
+<!-- footer.php below -->
 <?php
     get_footer();
 ?>

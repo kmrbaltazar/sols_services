@@ -1,7 +1,7 @@
 <?php
     get_header();
 ?>
-<!-- above this comment it will be header.php -->
+<!-- header.php above -->
     
     
     <section class="home-landing">

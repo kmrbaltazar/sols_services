@@ -6,6 +6,7 @@ document.getElementById('menu-item-30').classList.add('services_menu');
 document.getElementById('menu-item-18').classList.add('services_menu');
 document.getElementById('menu-item-17').classList.add('services_menu');
 
+// Menu for tablet and mobile screens
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".menu");
 
