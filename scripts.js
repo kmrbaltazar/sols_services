@@ -19,3 +19,14 @@ document.querySelectorAll(".services_menu").forEach(n => n.addEventListener("cli
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 }))
+
+// Go to top button
+let mybutton = document.getElementById("mybutton");
+
+window.onscroll = function(){
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    mybutton.classList.remove('no-display');
+  } else {
+    mybutton.classList.add('no-display');
+  }
+}

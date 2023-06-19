@@ -29,5 +29,15 @@
         
     </div> <!-- this is the closing tag for .body-container div in header.php -->
     <?php wp_footer(); ?>
+
+    <!-- GO TO TOP -->
+    <div class="go-top-btn-wrapper no-display" id="mybutton">
+            <a href="#">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+    </div>
+
+
+
 </body>
 </html>
