@@ -246,7 +246,7 @@ footer {
 
 /* INDEX - HOME LANDING */
 .home-landing {
-    height: 90vh;
+    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./Assets/services-carousel7.png");
     background-size: cover;
     background-position: center;
