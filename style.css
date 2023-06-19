@@ -725,7 +725,18 @@ div.wpforms-container-full textarea {
         width: 80%;
         margin: 0 auto;
     }
+}
 
+/* BIG TABLETS or SMALL LAPTOPS */
+@media (max-width: 65em) {
+    header a {
+        font-size: 18px;
+    }
+
+    .project-portfolio-section {
+        grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+        grid-auto-rows: minmax(284px,auto);
+    }
 }
 
 /* TABLET */
